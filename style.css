@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins','sans-serif';
+    box-sizing: border-box;
+}
+.container{
+    width:100%;
+    height: 100vh;
+    background-image:linear-gradient(rgba(0,0,50,0.8),rgba(0,0,50,0.8)),url(download.jpeg);
+    background-position: center;
+    background-size: cover;
+    position:relative;
+
+}
+.form-box{
+    width: 90%;
+    max-width: 450px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    padding: 50px 60px 70px;
+    background: #fff;
+    border-radius: 6px;
+    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.9);
+}
+.form-box h1{
+    position: relative;
+    color: #3c00a0;
+    margin-bottom: 60px;
+    font-size: 30px;
+    
+
+}
+.form-box h1::after{
+    content: '';
+    width: 30px;
+    height: 4px;
+    position: absolute;
+    left: 50%;
+    bottom: -12px;
+    transform: translate(-50%);
+    border-radius: 3px;
+    background: #22018f;
+}
+.input-field{
+    display: flex;
+    border-radius: 3px;
+    align-items: center;
+    margin: 15px 0;
+    background-color: #eaeaea;
+    max-height: 65px;
+    overflow: hidden;
+    transition: max-height 0.5s;    
+}
+input{
+    width: 100%;
+    background: transparent;
+    padding: 18px 15px;
+    border: 0;
+    outline: 0;
+}
+.input-field i{
+    margin-left: 15px;
+    color: #999;
+}
+form p{
+    text-align: left;
+    font-size: 13px;
+}
+form p a{
+    text-decoration: none;
+    color: #22018f;
+}
+.btn-field button{
+    flex-basis:48%;
+    height: 40px;
+    background-color: #22018f;
+    color: #fff;
+    border-radius: 20px;
+    cursor: pointer;
+    border: 0;
+    outline:0;
+    transition:color 1s;
+}
+.btn-field{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.input-group{
+    height: 280px
+}
+.btn-field button.disable{
+    color: #555;
+    background:#eaeaea;
+
+}
